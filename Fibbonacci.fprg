@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dell"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-07 12:23:02 PM"/>
+        <attribute name="created" value="RGVsbDtERUxMLVBDOzIwMjAtMTItMDc7MTE6NTE6MDEgQU07MjExOA=="/>
+        <attribute name="edited" value="RGVsbDtERUxMLVBDOzIwMjAtMTItMDc7MTI6MjM6MDIgUE07MTsyMjQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, count" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <input variable="a"/>
+            <declare name="fibbo" type="Integer" array="True" size="a"/>
+            <for variable="count" start="0" end="a&#13;&#10;" direction="inc" step="1">
+                <if expression="count==0 or count ==1">
+                    <then>
+                        <assign variable="fibbo[count]" expression="count"/>
+                    </then>
+                    <else>
+                        <assign variable="fibbo[count]" expression="fibbo[count-2]+fibbo[count-1]"/>
+                    </else>
+                </if>
+                <output expression="fibbo[count]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

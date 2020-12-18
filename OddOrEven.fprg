@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dell"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-07 12:20:07 PM"/>
+        <attribute name="created" value="RGVsbDtERUxMLVBDOzIwMjAtMTItMDc7MTI6MDE6MTUgUE07MjEzNA=="/>
+        <attribute name="edited" value="RGVsbDtERUxMLVBDOzIwMjAtMTItMDc7MTI6MjA6MDcgUE07MTsyMjQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <if expression="a%2==0">
+                <then>
+                    <output expression="&quot;Its even number&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Its odd num&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="add" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body/>
+    </function>
+</flowgorithm>

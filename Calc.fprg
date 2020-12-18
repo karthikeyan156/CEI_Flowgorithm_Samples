@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dell"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-07 12:15:25 PM"/>
+        <attribute name="created" value="RGVsbDtERUxMLVBDOzIwMjAtMTItMDc7MTE6NTc6NDggQU07MjEzNQ=="/>
+        <attribute name="edited" value="RGVsbDtERUxMLVBDOzIwMjAtMTItMDc7MTI6MTU6MjUgUE07MTsyMjQ4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, choice" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter th values for a and b&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <output expression="&quot;press 1 for add&#13;&#10;press 2 for sub&#13;&#10;press 3 for mul&#13;&#10;press 4 for div&quot;" newline="True"/>
+            <input variable="choice"/>
+            <if expression="choice==1">
+                <then>
+                    <call expression="add(a,b)"/>
+                </then>
+                <else>
+                    <if expression="choice==2">
+                        <then>
+                            <call expression="sub(a,b)"/>
+                        </then>
+                        <else>
+                            <if expression="choice==3">
+                                <then>
+                                    <call expression="mul(a,b)"/>
+                                </then>
+                                <else>
+                                    <if expression="choice==4">
+                                        <then>
+                                            <call expression="div(a,b)"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;press the correct number&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="add" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="a+b"/>
+            <output expression="&quot; value is &quot; &amp; c" newline="True"/>
+        </body>
+    </function>
+    <function name="div" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Real" array="False" size=""/>
+            <assign variable="c" expression="a/b"/>
+            <output expression="&quot;sub value is &quot; &amp;c" newline="True"/>
+        </body>
+    </function>
+    <function name="mul" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="a*b"/>
+            <output expression="&quot;value is &quot; &amp; c" newline="True"/>
+        </body>
+    </function>
+    <function name="sub" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="a-b"/>
+            <output expression="&quot;value is &quot; &amp; c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
